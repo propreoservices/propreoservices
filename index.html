@@ -4,70 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Propreo - Cleaning Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description"
+        content="Propreo provides professional residential, commercial, and industrial cleaning services in Montreal and nearby regions.">
+    <meta name="keywords"
+        content="Cleaning Services, Montreal Cleaning, Residential Cleaning, Commercial Cleaning, Office Cleaning, Propreo">
+    <meta name="author" content="Propreo">
+    <meta property="og:title" content="Propreo - Cleaning Services in Montreal">
+    <meta property="og:description"
+        content="Professional residential, commercial, and industrial cleaning services tailored to your needs.">
+    <meta property="og:url" content="https://propreoservices.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:image" content="banner.png" />
+    <meta property="og:image:width" content="1792" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <title>Propreo - Professional Cleaning Services</title>
     <style>
         /* General Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #2C3E50;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
         }
 
         /* Hero Section */
         .hero {
             text-align: center;
-            padding: 60px 20px;
+            padding: 80px 20px;
             background-color: #2C3E50;
             color: white;
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 10px;
         }
 
         .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn-call {
+            background-color: #007814;
+            color: white;
+            padding: 12px 30px;
             font-size: 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .hero .btn-call:hover {
+            background-color: #5c9600;
         }
 
         /* Section Styles */
         section {
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
         section h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
-            color: #333;
+            color: #2C3E50;
         }
 
-        section p,
-        section ul {
-            font-size: 1.1rem;
+        section p {
+            font-size: 1.2rem;
             color: #555;
+            margin-bottom: 30px;
         }
 
-        ul {
+        .services ul {
             list-style: none;
-            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
-        ul li {
-            margin: 10px 0;
+        .services ul li {
+            width: 200px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .services ul li img {
+            width: 50px;
+            margin-bottom: 10px;
         }
 
         /* Contact Button */
         .btn {
-            display: inline-block;
-            margin: 20px 0;
-            padding: 10px 20px;
             background-color: #3498DB;
             color: white;
+            padding: 12px 30px;
+            font-size: 1.2rem;
             text-decoration: none;
-            font-size: 1.1rem;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
         .btn:hover {
@@ -76,42 +144,50 @@
 
         /* Footer */
         footer {
-            text-align: center;
-            padding: 20px;
             background-color: #2C3E50;
             color: white;
+            padding: 20px 0;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
+        footer p {
+            margin: 0;
+        }
 
-            section h2 {
-                font-size: 1.8rem;
-            }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #00a500;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <!-- Hero Section -->
     <header class="hero">
         <h1>Propreo</h1>
         <p>Professional Cleaning Services in Montreal & Nearby Areas</p>
+        <a href="tel:+15141234567" class="btn-call">Call Now: +1 (514) 123-4567</a>
     </header>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Us</h2>
-        <p>At Propreo, we offer top-notch cleaning services tailored to your needs. Our team is dedicated to keeping
-            your space spotless, whether it's residential, commercial, or industrial cleaning.</p>
+        <p>At Propreo, we offer top-notch cleaning services tailored to your needs. Our team is dedicated to keeping your space spotless, whether it's residential, commercial, or industrial cleaning.</p>
     </section>
 
     <!-- Services Section -->
-    <section id="services">
+    <section id="services" class="services">
         <h2>Our Services</h2>
         <ul>
             <li>Residential Cleaning</li>
@@ -126,13 +202,16 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Reach out to us for inquiries or bookings:</p>
-        <a href="https://forms.gle/your-google-form-link" target="_blank" class="btn">Contact Us via Google Form</a>
-        <p>Or call us at: <strong>+1 (514) 123-4567</strong></p>
+        <p>Reach out to us for bookings:</p>
+        <a href="https://forms.gle/cudKKwUrZxGyRC6SA" target="_blank" class="btn">Message Us</a>
+        <br/><br/><br/><p>Or call us at: <strong><a href="tel:+15141234567" class="btn-call">+1 (514) 123-4567</a></strong></p>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Propreo. All Rights Reserved.</p>
+        <center>
+            <p>&copy; 2024 Propreo. All Rights Reserved</p>
+        </center>
     </footer>
 
 </body>
